@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Banner styling */
+  .banner {
+    background: url('/images/totoro\ banner\ 1920x544.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Content inside the banner */
+  .banner-content {
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #24b28d;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  
+  /* Banner */
+@media screen and (max: 1200px){
+    .banner{
+    background: url('/images/totoro\ banner\ 1200x544.jpg') no-repeat center center/cover;
+
+    }
+}
+
+@media screen and (max: 760px){
+    .banner{
+    background: url('/images/totoro\ banner\ 760x320.jpg') no-repeat center center/cover;
+
+    }
+}
+
+  @media (max-width: 768px) {
+    .banner h1 {
+      font-size: 2rem;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  
+    .banner {
+      height: 50vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner h1 {
+      font-size: 1.5rem;
+    }
+  
+    .banner p {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+    }
+  }
